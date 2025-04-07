@@ -3,7 +3,7 @@ public class Calculator {
     double inputValue = 0.0;
     double currentValue = 0.0;
     char operator = '+';
-    public void updateDisplay{
+    public void updateDisplay () {
         System.out.println();
         System.out.println(" %,12.2d%n", previousValue);
         System.out.println("%1s%,12.2d%n", operator, inputvalue);
