@@ -6,7 +6,7 @@ public class Calculator {
     public void updateDisplay () {
         System.out.println();
         System.out.println(" %,12.2d%n", previousValue);
-        System.out.println("%1s%,12.2d%n", operator, inputvalue);
+        System.out.println("%1s%,12.2d%n", operator, inputValue);
         System.out.println("==============");
         System.out.println(" %,12.2d%n", currentValue);
         System.out.println();
