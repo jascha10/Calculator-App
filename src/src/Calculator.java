@@ -1,6 +1,4 @@
-import java.awt.event.ActionListener;
-
-public class Calculator implements BasicMath {
+public abstract class Calculator implements BasicMath {
     double previousValue = 0.0;
     double inputValue = 0.0;
     double currentValue = 0.0;
@@ -14,14 +12,6 @@ public class Calculator implements BasicMath {
         System.out.println();
     }
 
-    @Override
-    public <N extends Number> void add(N value) {
-        operator ='+';
-        previousValue = currentValue;
-        this.inputValue = value.doubleValue();
-        currentValue += inputValue;
-        updateDisplay();
-    }
      public void clear() {
         previousValue = 0.0;
         inputValue = 0.0;
@@ -29,6 +19,9 @@ public class Calculator implements BasicMath {
         System.out.println("Calculator Cleared");
         updateDisplay();
     }
+
+
+
     public <N extends Number> void subtract(N value) {
     operator = '-';
     previousValue = currentValue;
@@ -58,23 +51,38 @@ public class Calculator implements BasicMath {
 }
 
     @Override
-    public Number add(Number a) {
-        return null;
+    public <N extends Number> void add(N value) {
+        operator = '+';
+        previousValue = currentValue;
+        currentValue = value.doubleValue();
+        currentValue += inputValue;
+        updateDisplay();
     }
 
     @Override
-    public Number subtract(Number a) {
-        return null;
+    public <N extends Number> void subtract(N value) {
+        operator = '-';
+        previousValue = currentValue;
+        currentValue = value.doubleValue();
+        currentValue += inputValue;
+        updateDisplay();
     }
 
     @Override
-    public Number multiply(Number a) {
-        return null;
+    public <N extends Number> void multiply(N value) {
+        operator = '*';
+        previousValue = currentValue;
+        currentValue = value.doubleValue();
+        currentValue += inputValue;
+        updateDisplay();
     }
 
     @Override
-    public Number divide(Number a) {
-        return null;
+    public <N extends Number> void divide(N value) {
+        operator = '/';
+        previousValue = currentValue;
+        currentValue = value.doubleValue();
+        currentValue += inputValue;
+        updateDisplay();
     }
-}
 }
