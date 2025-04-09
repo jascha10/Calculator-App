@@ -54,17 +54,6 @@ s public class Calculator {
     currentValue /= inputValue;
     updateDisplay();
 }
- public class Testbench {
-    public static void main(String[] args) {
-        System.out.println("Calculator On");
 
-        Calculator calc = new Calculator();
-        calc.clear();             // Output: 0.00
-        calc.add(10.22);          // 10.22
-        calc.subtract(2.22);      // 8.00
-        calc.multiply(10.00);     // 80.00
-        calc.divide(2.00);        // 40.00
-    }
-}
 }
 }
