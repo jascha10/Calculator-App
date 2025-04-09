@@ -1,4 +1,6 @@
-  public class Calculator {
+import java.awt.event.ActionListener;
+
+public class Calculator implements BasicMath {
     double previousValue = 0.0;
     double inputValue = 0.0;
     double currentValue = 0.0;
@@ -55,5 +57,24 @@
     updateDisplay();
 }
 
+    @Override
+    public Number add(Number a) {
+        return null;
+    }
+
+    @Override
+    public Number subtract(Number a) {
+        return null;
+    }
+
+    @Override
+    public Number multiply(Number a) {
+        return null;
+    }
+
+    @Override
+    public Number divide(Number a) {
+        return null;
+    }
 }
 }

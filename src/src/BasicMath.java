@@ -1,6 +1,6 @@
 public interface BasicMath<T extends Number> {
-    T add(T a);
-    T subtract(T a);
-    T multiply(T a);
-    T divide(T a);
+    <N extends Number> void add(N value);
+    <N extends Number> void subtract(N value);
+    <N extends Number> void multiply(N value);
+    <N extends Number> void divide(N value);
 }
