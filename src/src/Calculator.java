@@ -34,6 +34,13 @@ s public class Calculator {
     currentValue -= inputValue;
     updateDisplay();
 }
+    public <N extends Number> void multiply(N value) {
+    operator = '*';
+    previousValue = currentValue;
+    inputValue = value.doubleValue();
+    currentValue *= inputValue;
+    updateDisplay();
+}
    public class Testbench {
     public static void main(String[] args) {
         System.out.println("Calculator On");
