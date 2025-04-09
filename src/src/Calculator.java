@@ -1,4 +1,4 @@
-public class Calculator {
+s public class Calculator {
     double previousValue = 0.0;
     double inputValue = 0.0;
     double currentValue = 0.0;
@@ -27,6 +27,13 @@ public class Calculator {
         System.out.println("Calculator Cleared");
         updateDisplay();
     }
+    public <N extends Number> void subtract(N value) {
+    operator = '-';
+    previousValue = currentValue;
+    inputValue = value.doubleValue();
+    currentValue -= inputValue;
+    updateDisplay();
+}
     public class Testbench {
     public static void main(String[] args) {
         System.out.println("Calculator On");
