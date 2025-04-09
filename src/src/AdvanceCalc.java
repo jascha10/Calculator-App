@@ -1,4 +1,4 @@
-public class AdvanceCalc extends Calculator implements AdvanceMath {
+public class AdvanceCalc extends MemoryCalc implements AdvanceMath {
     int precision = 0; // Default precision
 
     // Override updateDisplay() to include precision and handle sqrt operator

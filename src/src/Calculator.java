@@ -5,10 +5,10 @@
     char operator = '+';
     public void updateDisplay () {
         System.out.println();
-        System.out.println(" %,12.2d%n", previousValue);
-        System.out.println("%1s%,12.2d%n", operator, inputValue);
+        System.out.printf(" %,12.2d%n", previousValue);
+        System.out.printf("%1s%,12.2d%n", operator, inputValue);
         System.out.println("==============");
-        System.out.println(" %,12.2d%n", currentValue);
+        System.out.printf(" %,12.2d%n", currentValue);
         System.out.println();
     }
 
