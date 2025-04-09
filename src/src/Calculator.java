@@ -41,7 +41,20 @@ s public class Calculator {
     currentValue *= inputValue;
     updateDisplay();
 }
-  public class Testbench {
+    public <N extends Number> void divide(N value) {
+    operator = '/';
+    previousValue = currentValue;
+    inputValue = value.doubleValue();
+    
+    if (inputValue == 0.0) {
+        System.out.println("Error: Division by zero");
+        return;
+    }
+
+    currentValue /= inputValue;
+    updateDisplay();
+}
+ public class Testbench {
     public static void main(String[] args) {
         System.out.println("Calculator On");
 
@@ -50,6 +63,8 @@ s public class Calculator {
         calc.add(10.22);          // 10.22
         calc.subtract(2.22);      // 8.00
         calc.multiply(10.00);     // 80.00
+        calc.divide(2.00);        // 40.00
     }
+}
 }
 }
