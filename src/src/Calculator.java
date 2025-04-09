@@ -20,4 +20,11 @@ public class Calculator {
         currentValue += inputValue;
         updateDisplay();
     }
+     public void clear() {
+        previousValue = 0.0;
+        inputValue = 0.0;
+        currentValue = 0.0;
+        System.out.println("Calculator Cleared");
+        updateDisplay();
+    }
 }
