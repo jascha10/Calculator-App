@@ -12,3 +12,14 @@ public class MemoryCalc extends Calculator {
     }
 
   
+  public void clearMemory() {
+        memoryValue = 0.0;
+        System.out.println("Memory Cleared");
+    }
+    
+    @Override
+    public void updateDisplay() {
+        super.updateDisplay();
+        System.out.printf("Memory: %12.4f\n", memoryValue);
+    }
+}
