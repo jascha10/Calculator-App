@@ -1,4 +1,4 @@
-s public class Calculator {
+  public class Calculator {
     double previousValue = 0.0;
     double inputValue = 0.0;
     double currentValue = 0.0;
