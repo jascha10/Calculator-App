@@ -62,6 +62,7 @@ public class Testbench {
 
         // Clear the memory after use.
         calc.clearMemory();
+        System.out.println("Memory Cleared");
 
         // Finally, clear the entire calculator.
         calc.clear();
