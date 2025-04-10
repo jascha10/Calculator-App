@@ -1,25 +1,38 @@
-# Calculator App - Java OOP
+# Ultimate Calculator App
 
-## Project Overview
-This project is a simple **Calculator App** built using **Java** and **Object-Oriented Programming (OOP)** principles. The calculator can do basic math operations like addition, subtraction, multiplication, and division. It also has advanced features, including square roots and memory functions to store and manipulate values. The app allows you to control how many decimal places the results show (precision), making it more flexible.
+Hey there! Welcome to the **Ultimate Calculator App**! 🎉 We made this app as part of a class project, and it’s designed to help with all kinds of math – from basic calculations to more advanced functions like square roots Whether you're working on homework, a project, or just need to do some quick math, this app has you covered. Plus, it lets you store values in memory, set your own precision, and do math with any type of number!
 
-The goal of this project was to practice important Java OOP concepts like interfaces, abstract classes, inheritance, and generics.
+## 🚀 Features:
+- **Basic Math**: Add, subtract, multiply, and divide. Simple stuff, but super useful!
+- **Advanced Functions**: Need a square root? O We’ve got you covered.
+- **Memory Functions**: Store numbers in memory, add or subtract them, and clear it all out when you're done.
+- **Precision Control**: Want your results to have more decimal places? Set the precision to anywhere from 0 to 10.
+- **Flexible Input**: It doesn’t matter if you’re working with integers, floats, or doubles – we handle them all!
 
-## Features
-- **Basic Math Operations**: Perform addition, subtraction, multiplication, and division.
-- **Advanced Math**: Calculate square roots (e.g., `√1600`).
-- **Memory Functions**: Add, subtract, and clear memory.
-- **Precision**: Set the number of decimal places for the output (from 0 to 10).
+## 🛠️ How to Use:
+1. **Clone the Repo**:
+   - First, grab the project using: 
+     ```bash
+     git clone https://github.com/jascha10/Calculator-App.git
+     ```
+   
+2. **Run the App**:
+   - Open the project in your IDE (we used IntelliJ, but anything works).
+   - Run `Testbench.java` to see how the calculator works. It’ll show you a bunch of different operations.
 
-## OOP Concepts Used
-This project helps practice the following key Java OOP concepts:
-- **Interfaces**: Define the structure of operations.
-- **Abstract Classes**: Provide a base for other classes to build on.
-- **Generics**: Handle different types of numbers (like integers and decimals).
-- **Inheritance**: Extend basic functionality and add more features.
-- **Polymorphism**: Use methods in different classes to achieve similar results.
+3. **Play Around**:
+   - Test the basic operations like `add()`, `subtract()`, `multiply()`, and `divide()`.
+   - Try out memory functions with `memoryAdd()`, `memorySubtract()`, and `clearMemory()`.
+   - Don’t forget to mess with the precision! Use `setPrecision()` to change how many decimal places you want.
+   - Want to do more advanced stuff? Go ahead and use the square root 
 
-## How It Works
-- **Basic Operations**: You can perform simple math calculations such as adding, subtracting, multiplying, and dividing numbers.
-- **Advanced Operations**: You can calculate square roots (e.g., `√1600`) and set the precision for how many decimal places the calculator displays.
-- **Memory Functions**: The app lets you store results in memory, subtract from memory, or clear it completely.
+
+## 👥 Who Made This?
+- **Jacob Schamp**
+- **Rania Hassani**
+
+
+## 🌍 Find Us:
+- GitHub Repo: [Ultimate Calculator App](https://github.com/jascha10/Calculator-App.git)
+
+
